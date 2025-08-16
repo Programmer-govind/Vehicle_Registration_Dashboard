@@ -43,10 +43,10 @@ def setup_driver(browser_name):
 
     try:
         if browser_name == 'edge':
-            service = EdgeService("path/to/webdriver")
+            service = EdgeService(EdgeChromiumDriverManager().install())
             driver = webdriver.Edge(service=service, options=options)
         elif browser_name == 'chrome':
-            service = ChromeService("path/to/webdriver")
+            service = ChromeService(ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service, options=options)
         else:
             raise ValueError("Unsupported browser. Choose 'chrome' or 'edge'.")
