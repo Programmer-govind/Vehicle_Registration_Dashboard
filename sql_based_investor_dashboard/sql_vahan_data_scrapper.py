@@ -7,6 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.edge.service import Service as EdgeService
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 import time
 from datetime import datetime
 import io
@@ -103,11 +105,12 @@ def setup_driver(browser_name):
 
     try:
         if browser_name == 'edge':
-            service = EdgeService("../msedgedriver.exe")
+            service = EdgeService(EdgeChromiumDriverManager().install())
             driver = webdriver.Edge(service=service, options=options)
         elif browser_name == 'chrome':
             # Ensure you have chromedriver.exe in your PATH or specify its path
-            driver = webdriver.Chrome(options=options)
+            service = ChromeService(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=options)
         else:
             raise ValueError("Unsupported browser. Choose 'chrome' or 'edge'.")
         print(f"{browser_name.capitalize()} driver successfully set up.")
