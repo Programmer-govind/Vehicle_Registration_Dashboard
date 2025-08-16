@@ -118,6 +118,28 @@ _The video should cover:_
 ## 💡 Investment Insights (Bonus)
 > _Share any valuable investment insight or surprising trend you noticed while working on the data._
 
+### Key Investment Insights from Vahan Vehicle Registration Data
+
+1. **Consistent Growth in 2W Segment:**
+  - Two-wheelers (2W) consistently show the highest registration volumes, especially in semi-urban and rural regions. This trend suggests strong demand for affordable personal mobility, making 2W manufacturers attractive for long-term investment.
+
+2. **Emerging Electric Vehicle (EV) Uptake:**
+  - Recent years show a noticeable uptick in registrations for electric 2W and 3W vehicles, outpacing growth rates in traditional fuel segments. This signals a shift in consumer preference and policy support, highlighting opportunities in the EV supply chain and related infrastructure.
+
+3. **Quarterly Volatility Linked to Policy and Festive Seasons:**
+  - QoQ data reveals spikes in registrations during festive quarters (Q3/Q4), and occasional dips following regulatory changes (e.g., BS6 emission norms, subsidy revisions). Investors should monitor policy cycles and seasonality for optimal entry/exit points.
+
+4. **Market Share Shifts Among Manufacturers:**
+  - While a few manufacturers dominate the 2W and 4W segments, new entrants and aggressive pricing strategies have led to periodic market share gains for challengers. Tracking these shifts can help identify emerging leaders early.
+
+5. **4W Segment Recovery Post-Pandemic:**
+  - The 4W (four-wheeler) segment, after a pandemic-induced slump, is showing signs of recovery, especially in the SUV and compact car categories. This rebound may present value opportunities in select OEMs.
+
+6. **Commercial Vehicle (3W/4W) Cyclicality:**
+  - 3W and 4W commercial vehicle registrations are more sensitive to economic cycles and infrastructure spending. Surges often coincide with government incentives or logistics sector growth.
+
+> _These insights are based on observed patterns in the Vahan registration data and general industry trends. For investment decisions, always combine data-driven analysis with broader market research._
+
 ---
 
 ## 🛠️ Technical Details
