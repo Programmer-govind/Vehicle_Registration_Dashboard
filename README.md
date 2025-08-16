@@ -91,9 +91,10 @@ python migrate_csv_to_sql.py
 
 > _Add screenshots of your dashboard UI, graphs, and filters here._
 
-- ![Dashboard Home](screenshots/dashboard_home.png)
-- ![Filters Example](screenshots/filters.png)
-- ![Growth Trends](screenshots/growth_trends.png)
+<img width="1907" height="984" alt="image" src="https://github.com/user-attachments/assets/1eeab58a-b41b-4fa9-8c0c-579f163edf7e" />
+<img width="1908" height="955" alt="image" src="https://github.com/user-attachments/assets/5fae6c53-6a20-47e6-b5cf-df0cd62c6f10" />
+<img width="1915" height="913" alt="image" src="https://github.com/user-attachments/assets/debcae5a-3862-4f1d-b8c3-54d52c1099a4" />
+<img width="1917" height="988" alt="image" src="https://github.com/user-attachments/assets/47910a35-099c-442c-9411-022a33c1d223" />
 
 ---
 
