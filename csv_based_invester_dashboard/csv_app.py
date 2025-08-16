@@ -6,7 +6,7 @@ import plotly.express as px # For interactive plots
 
 # --- 1. Configuration and Data Paths ---
 # Define the directory where CSVs are stored
-DATA_DIR = "../vahan_data" # Assuming the scraped data is in this folder
+DATA_DIR = "vahan_data" # Assuming the scraped data is in this folder
 
 # Ensure the data directory exists
 if not os.path.exists(DATA_DIR):
