@@ -268,7 +268,7 @@ def main_dashboard():
             display_yoy_df = yoy_df[
                 (yoy_df['Year'] >= year_range[0]) & 
                 (yoy_df['Year'] <= year_range[1])
-            ].dropna(subset=['YoYGrowth'])
+            ]
             
             if not display_yoy_df.empty:
                 st.subheader("Year-over-Year Growth Table")

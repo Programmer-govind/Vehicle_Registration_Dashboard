@@ -174,7 +174,17 @@ def calculate_yoy_growth(df_annual):
     
     # Handle infinite values (from division by zero) and round the result.
     df_annual_sorted['YoYGrowth'] = df_annual_sorted['YoYGrowth'].replace([float('inf'), -float('inf')], pd.NA).round(2)
-    
+
+    # For the first year (e.g., 2016 or first year per group), set missing values to np.nan (not string 'NA')
+    import numpy as np
+    min_years = df_annual_sorted.groupby('Name')['Year'].transform('min')
+    mask_first_year = df_annual_sorted['Year'] == min_years
+    df_annual_sorted.loc[mask_first_year, 'PrevYearRegistrations'] = np.nan
+    df_annual_sorted.loc[mask_first_year, 'YoYGrowth'] = np.nan
+
+    # Registrations should always be numeric
+    df_annual_sorted['Registrations'] = pd.to_numeric(df_annual_sorted['Registrations'], errors='coerce')
+
     # Return the final DataFrame with the correct calculations.
     return df_annual_sorted
 
@@ -323,7 +333,7 @@ def main_dashboard():
             display_yoy_df = yoy_df[
                 (yoy_df['Year'] >= year_range[0]) & 
                 (yoy_df['Year'] <= year_range[1])
-            ].dropna(subset=['YoYGrowth'])
+            ]
             
             if not display_yoy_df.empty:
                 st.subheader("Year-over-Year Growth Table")
