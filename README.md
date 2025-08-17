@@ -119,7 +119,7 @@ python migrate_csv_to_sql.py
 ---
 
 ## 🎥 Video Walkthrough
-> _[Insert your YouTube/Drive video link here]_
+[Drive Link](https://drive.google.com/file/d/1VCY2AX2PaYYyqyNjmEam8fqr1hk6ODdx/view?usp=drive_link)
 
 ---
 
