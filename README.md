@@ -62,6 +62,18 @@ pip install pandas streamlit sqlite3
   - `csv_based_invester_dashboard/csv_vahan_data_scrapper.py`
   - `sql_based_investor_dashboard/sql_vahan_data_scrapper.py`
 
+#### Selenium WebDriver Setup (Important for Scraping)
+The scrapers use Selenium for automated data collection. Selenium requires a browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox):
+
+- By default, the script tries to use the internal ChromiumManager to download the driver automatically.
+- If this fails or causes issues, **download the correct driver manually** for your browser version:
+  - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
+  - [GeckoDriver for Firefox](https://github.com/mozilla/geckodriver/releases)
+- After downloading, update the path to the driver in the scrapper script (see the comments in `*_vahan_data_scrapper.py`).
+- Ensure the driver executable is accessible (either in your PATH or by providing the full path in the script).
+
+**Note:** The Vahan portal is highly dynamic, built using JSF and custom PrimeFaces components. This can cause scraping issues or breakages if the portal structure changes. If you encounter persistent scraping problems, please contact me for support.
+
 ### 4. Migrate Data to SQLite (Optional, for SQL-based dashboard)
 ```bash
 python migrate_csv_to_sql.py
