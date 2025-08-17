@@ -63,12 +63,13 @@ pip install pandas streamlit sqlite3
   - `sql_based_investor_dashboard/sql_vahan_data_scrapper.py`
 
 #### Selenium WebDriver Setup (Important for Scraping)
-The scrapers use Selenium for automated data collection. Selenium requires a browser driver (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox):
+The scrapers use Selenium for automated data collection. Selenium requires a browser driver (e.g.,EdgeDriver for Microsoft Edge, ChromeDriver for Chrome, GeckoDriver for Firefox):
 
 - By default, the script tries to use the internal ChromiumManager to download the driver automatically.
 - If this fails or causes issues, **download the correct driver manually** for your browser version:
-  - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
-  - [GeckoDriver for Firefox](https://github.com/mozilla/geckodriver/releases)
+-  - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
+-  - [GeckoDriver for Firefox](https://github.com/mozilla/geckodriver/releases)
+-  - [Edge WebDriver (msedgedriver)](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 - After downloading, update the path to the driver in the scrapper script (see the comments in `*_vahan_data_scrapper.py`).
 - Ensure the driver executable is accessible (either in your PATH or by providing the full path in the script).
 
